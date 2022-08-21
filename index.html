@@ -10,7 +10,19 @@
 </head>
 <body>
     <style>
-.scripts::-webkit-scrollbar {
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(14, 14, 14);        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(29, 29, 29);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
+  }
+
+  .scripts::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
   .scripts::-webkit-scrollbar-track {
@@ -21,6 +33,7 @@
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
   }
+
 
         .Title{
             padding-left: 20px;
@@ -46,15 +59,13 @@ body{
     align-items: center;
     flex-direction: column;
     background-size:cover;
-    background-image: url(
-        
-)
 }
 body{
     background-position: center;
             background-repeat: no-repeat;
             background-color: rgb(20, 20, 20);
             background-attachment: fixed;
+            overflow-y: scroll;
 }
 .TypeBox{
    text-align: center;
