@@ -11,7 +11,7 @@
 <body>
     <style>
 body::-webkit-scrollbar {
-    width: 5px;               /* width of the entire scrollbar */
+    width: 1px;               /* width of the entire scrollbar */
   }
   body::-webkit-scrollbar-track {
     background: rgb(14, 14, 14);        /* color of the tracking area */
@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
   }
   .scripts::-webkit-scrollbar-thumb {
     background-color: rgb(29, 29, 29);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
   }
 
@@ -122,7 +122,7 @@ backdrop-filter: blur(5px);
     margin-top: -8px;
 }
 
-.Btn1{
+.Btn1, .Btn2{
     display: inline-block;
     border-style: none;
     border-radius: 5px;
@@ -136,9 +136,7 @@ backdrop-filter: blur(5px);
 transition: 0.3s;
 }
 .Btn1:hover, .Btn2:hover{
-    background-color: black;
     opacity: 50%;
-    color: white;
     text-decoration: underline;
 }
 
@@ -212,6 +210,10 @@ body{
     display: block;
     color: green;
 }
+.Btn2{
+    color:orangered
+}
+
     </style>
 <div class="Topbarrr">
     <a class="link" href="https://sharkcores.github.io/scriptcore/">
@@ -243,6 +245,11 @@ body{
 <a class="link" href="https://www.shark-core.com" target="_blank">
     <button class="Btn1">SharkCore</button>
 </a>
+
+<a class="link3" href="https://www.sharkcores.github.io/Settings">
+    <button class="Btn2">Settings</button>
+</a>
+
 </div>
 <p class="ToS"> <span class="ToSTitle2">All Scripts</span> <br> <br> CTRL C to copy, CTRL V to paste <br> <br> All our current scripts are listed below. <br>  If Some scripts are too long, <br> they will get converted into a link.</p>
 
