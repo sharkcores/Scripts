@@ -22,13 +22,13 @@ body::-webkit-scrollbar {
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
   }
 
-  .scripts::-webkit-scrollbar {
+  #scripts::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
   }
-  .scripts::-webkit-scrollbar-track {
+  #scripts::-webkit-scrollbar-track {
     background: rgb(14, 14, 14);        /* color of the tracking area */
   }
-  .scripts::-webkit-scrollbar-thumb {
+  #scripts::-webkit-scrollbar-thumb {
     background-color: rgb(29, 29, 29);    /* color of the scroll thumb */
     border-radius: 5px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
@@ -59,6 +59,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-size:cover;
+
 }
 body{
     background-position: center;
@@ -72,13 +73,10 @@ body{
    margin-top:  10px;
 }
 .MainContent{
-    margin-top: 50px;
+    margin-top: 30px;
     display: block;
     align-items: center;
 user-select: none;
-background-color: rgba(63, 63, 63, 0.308);
--webkit-backdrop-filter: blur(5px);
-backdrop-filter: blur(5px);
 
 
 }
@@ -147,19 +145,20 @@ transition: 0.3s;
     color: transparent;
 }
 
-.ToS{
+.MainContent{
     border-style: none;
     background-color: black;
     color: white;
     text-align: center;
-    margin-top: 100px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: -400px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-family: sans-serif;
     user-select: none;
+    margin-top: -152px;
     transition: 0.3s;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
@@ -167,32 +166,37 @@ border-radius: none;
 background-color: transparent;
 color: white;
 background-color: rgb(20, 20, 20);
-
+width: 21.961932650073205vw;
+height: 19.7869101978691vh;
 }
-.ToS:hover{
+.MainContent:hover{
     opacity: 50%;
 }
 .TosTitle{
-    font-size: larger;
+    font-size: 1.25em;
     user-select: none;
     color: green;
     text-decoration: underline;
 }
 
-.TosTitle2{
+.TosTitle2, .ToSTitle3{
     font-size: larger;
     user-select: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
-.scripts{
+.ToSTitle3{
+    margin-top: 11px;
+}
+#scripts{
     overflow-y: scroll;
     overflow-x: scroll;
     background-color: black;
     color: white;
     font-family: sans-serif;
     text-align: center;
-height: 450px;
-width: 900px;
+height: 27.81844802342606vw;
+width: 132.4200913242009vh;
 border-radius: 5px;
 padding-left: 10px;
 padding-right: 10px;
@@ -216,7 +220,63 @@ body{
 .Btn2{
     color:orangered
 }
+#links{
+    scroll-behavior: smooth;
+    width:  0vw;
+    height: 0vh;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+    margin-left: 0px;
+    margin-top: -0px;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 150px;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    user-select: none;
+    margin-bottom: 0.625em;
+}
+#btncat, #btncat1, #close{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+color: white;
+height: 4.566210045662101vh;
+width:  fit-content;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.938em;
+}
+#btncat1{
+    width: fit-content;
+    height: 30px;
+}
+#close{
+    width:  200px;
+    height: 50px;
+    font-size: 1.563em;
+    margin-top: 140.00000000000003px;
+    margin-left: 200px;
+}
+#btncat:hover{
 
+    background-color: black;
+}
+#btncat1:hover{
+
+background-color: black;
+}
+#btncat1{
+    margin-bottom: 10px;
+}
+.realll{
+    text-align: center;
+}
     </style>
 <div class="Topbarrr">
     <a class="link" href="https://sharkcores.github.io/scriptcore/">
@@ -254,29 +314,57 @@ body{
 </a>
 
 </div>
-<p class="ToS"> <span class="ToSTitle2">All Scripts</span> <br> <br> CTRL C to copy, CTRL V to paste <br> <br> All our current scripts are listed below. <br>  If Some scripts are too long, <br> they will get converted into a link.</p>
 
 
-<div class="scripts">
+<div id="links">
+    <p class="ToSTitle3">Games</p>
+    <a href="#brookhaven" class="link">
+        <button id="btncat">Brookhaven</button>
+    </a>
+    <a href="#prison" class="link">
+        <button id="btncat">Prison Life</button>
+    </a>
+    <a href="#lifein" class="link">
+        <button id="btncat">Life in Paradise</button>
+    </a>
+    <a href="#combat" class="link">
+        <button id="btncat">Combat Warriors</button>
+    </a>
+    <a href="#dahood" class="link">
+        <button id="btncat">Da hood</button>
+    </a>
+    <a href="#arsenal" class="link">
+        <button id="btncat">Arsenal</button>
+    </a>
+    <a href="#disaster" class="link">
+        <button id="btncat">NeutralDisaster Survival</button>
+    </a>
+    <p class="realll"></p>
+    <button id="close">Close</button>
+</div>
 
-<p> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/60832e7d04766a6381194d7502fbb1e8/raw/fb<br>ecd900a62e1fa054998f02084475b6c4ed8f18/woah", true))()</p>
+<button id="btncat1">Games</button>
+
+<div id="scripts">
+
+<p id="brookhaven"> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/60832e7d04766a6381194d7502fbb1e8/raw/fb<br>ecd900a62e1fa054998f02084475b6c4ed8f18/woah", true))()</p>
 <br> <br>
-<p> <span class="TosTitle">Prison Life Scripts (3) </span>  <br> <br>
+<p id="prison"> <span class="TosTitle">Prison Life Scripts (3) </span>  <br> <br>
 <a href="https://pastebin.com/FqdAbZYS" target="_blank">Prison Life Script</a><br> <br>
 <a href="https://pastebin.com/FAXBKd93" target="_blank">Prison Life Script 2</a> <br> <br>
 <a href="https://pastebin.com/VHnxgyBQ" target="_blank"> Prison Life Script 3</a> </p>
 <br> <br>
-<p> <span class="ToSTitle">Life in Paradise Scripts (1) </span></p>
+<p id="lifein"> <span class="ToSTitle">Life in Paradise Scripts (1) </span></p>
 <br> <br>
 
 <p> <a href="https://pastebin.com/sRpRiUyM" target="_blank"  >Life In Paradise Script</a></p>
  <br> <br>
- <p> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
+ <p id="combat"> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
 <br> <br>
   <p> loadstring(game:HttpGet("https://raw.githubusercontent.com/crosszay1/dogeware/main/combat%20warriars.lua"))() </p>
 <br> <br>
 
-<p> <span class="ToSTitle">Da hood Scripts (3) </span></p>
+<p id="dahood"> <span class="ToSTitle">Da hood Scripts (3) </span></p>
 <br> <br>
 <p>loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
 </p>
@@ -289,7 +377,7 @@ body{
 <br>
 <p>loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()</p>
 <br> <br>
-<p> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
+<p id="arsenal"> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
 <br><br>
 <p>loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()</p>
 <br> 
@@ -301,7 +389,7 @@ body{
 <br>
 <p>loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()</p>
 <br> <br>
-<p> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
+<p id="disaster"> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
 <br> <br>
 <p>loadstring(game:HttpGet("https://raw.githubusercontent.com/2d<br>
 generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()</p>
@@ -316,5 +404,25 @@ generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()<
 <br>
 <br>
 </div>
+
 </body>
+<script>
+    document.getElementById("links").style.visibility="hidden";
+    document.getElementById("btncat1").onclick = function(){
+        document.getElementById("btncat1").style.visibility="hidden"
+        document.getElementById("scripts").style.visibility="hidden"
+        document.getElementById("links").style.visibility="visible"
+        document.getElementById("links").style.width="599.9999999999999px"
+        document.getElementById("links").style.height="350px"
+    }
+    document.getElementById("close").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="132.4200913242009vh"
+        document.getElementById("scripts").style.height="27.81844802342606vw"
+    }
+</script>
 </html>
