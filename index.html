@@ -136,10 +136,6 @@ border-radius: none;
     margin-right: 10px;
 transition: 0.3s;
 }
-.Btn1:hover, .Btn2:hover{
-    opacity: 50%;
-    text-decoration: underline;
-}
 
 .link{
     color: transparent;
@@ -195,8 +191,8 @@ height: 19.7869101978691vh;
     color: white;
     font-family: sans-serif;
     text-align: center;
-height: 27.81844802342606vw;
-width: 132.4200913242009vh;
+height: 450px;
+width: 300px;
 border-radius: 5px;
 padding-left: 10px;
 padding-right: 10px;
@@ -222,8 +218,6 @@ body{
 }
 #links{
     scroll-behavior: smooth;
-    width:  0vw;
-    height: 0vh;
     background-color: transparent;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
@@ -232,14 +226,13 @@ border-radius: none;
     margin-top: -0px;
     display: inline-block;
     margin-bottom: 0px;
-    margin-top: 150px;
+    margin-top: 120px;
     color: white;
     font-family: sans-serif;
     align-items: center;
-    user-select: none;
-    margin-bottom: 0.625em;
+    user-select: none
 }
-#btncat, #btncat1, #close{
+#btncat, #btncat1, #close, #btncats, #btncat3, #btncat4, #btncat5, #btncat6, #btncat7{
     background-color: transparent;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
@@ -253,8 +246,9 @@ width:  fit-content;
     font-size: 0.938em;
 }
 #btncat1{
-    width: fit-content;
-    height: 30px;
+    width: 120px;
+    height: 46px;
+    font-size: larger;
 }
 #close{
     width:  200px;
@@ -280,22 +274,25 @@ background-color: black;
 .realll{
     text-align: center;
 }
+#linkss{
+    color: transparent;
+}
     </style>
 <div class="Topbarrr">
-    <a class="link" href="https://sharkcores.github.io/scriptcore/">
+    <a class="link" href="https://sharkcores.github.io/scriptcoreMobile/">
         <button class="Btn1">Home</button>
     </a>
     
-    <a class="link" href="https://sharkcores.github.io/About/">
+    <a class="link" href="https://sharkcores.github.io/AboutMobile/">
         <button class="Btn1">About</button>
     </a>
 
-    <a class="link" href="https://sharkcores.github.io/ToS/">
+    <a class="link" href="https://sharkcores.github.io/ToSMobile/">
         <button class="Btn1">ToS</button>
         </a>
 
       
-        <a class="link" href="https://sharkcores.github.io/Bugfixes/">
+        <a class="link" href="https://sharkcores.github.io/BugfixesMobile/">
             <button class="Btn1">Bug fixes</button>
         </a>
 
@@ -312,45 +309,41 @@ background-color: black;
     <button class="Btn1">SharkCore</button>
 </a>
 
-<a class="link3" href="https://sharkcores.github.io/Settings">
-    <button class="Btn2">Settings</button>
-</a>
+
 
 </div>
 
 
 <div id="links">
     <p class="ToSTitle3">Games</p>
-    <a href="#brookhaven" class="link">
+    <a href="#brookhaven" id="linkss">
         <button id="btncat">Brookhaven</button>
     </a>
-    <a href="#prison" class="link">
-        <button id="btncat">Prison Life</button>
+    <a href="#prison" id="linkss">
+        <button id="btncats">Prison Life</button>
     </a>
-    <a href="#lifein" class="link">
-        <button id="btncat">Life in Paradise</button>
+    <a href="#lifein" id="linkss">
+        <button id="btncat3">Life in Paradise</button>
     </a>
-    <a href="#combat" class="link">
-        <button id="btncat">Combat Warriors</button>
+    <a href="#combat" id="linkss">
+        <button id="btncat4">Combat Warriors</button>
     </a>
-    <a href="#dahood" class="link">
-        <button id="btncat">Da hood</button>
+    <a href="#dahood" id="linkss">
+        <button id="btncat5">Da hood</button>
     </a>
-    <a href="#arsenal" class="link">
-        <button id="btncat">Arsenal</button>
+    <a href="#arsenal" id="linkss">
+        <button id="btncat6">Arsenal</button>
     </a>
-    <a href="#disaster" class="link">
-        <button id="btncat">NeutralDisaster Survival</button>
+    <a href="#disaster" id="linkss">
+        <button id="btncat7">NeutralDisaster Survival</button>
     </a>
-    <p class="realll"></p>
-    <button id="close">Close</button>
 </div>
 
 <button id="btncat1">Games</button>
 
 <div id="scripts">
 
-<p id="brookhaven"> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/60832e7d04766a6381194d7502fbb1e8/raw/fb<br>ecd900a62e1fa054998f02084475b6c4ed8f18/woah", true))()</p>
+<p id="brookhaven"> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gi <br> st.githubusercontent.com/TurkOy <br> uncu99/60832e7d04766a6381194d75 <br> 02fbb1e8/raw/fb<br>ecd900a62e1fa0549 <br> 98f02084475b6c4ed8f18/woah", true))()</p>
 <br> <br>
 <p id="prison"> <span class="TosTitle">Prison Life Scripts (3) </span>  <br> <br>
 <a href="https://pastebin.com/FqdAbZYS" target="_blank">Prison Life Script</a><br> <br>
@@ -364,25 +357,25 @@ background-color: black;
  <br> <br>
  <p id="combat"> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
 <br> <br>
-  <p> loadstring(game:HttpGet("https://raw.githubusercontent.com/crosszay1/dogeware/main/combat%20warriars.lua"))() </p>
+  <p> loadstring(game:HttpGet <br> ("https://raw.githubusercontent.c <br> om/crosszay1/dogeware/main/combat <br> %20warriars.lua"))() </p>
 <br> <br>
 
 <p id="dahood"> <span class="ToSTitle">Da hood Scripts (3) </span></p>
 <br> <br>
-<p>loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+<p>loadstring(game:HttpGet( <br> "https://raw.githubusercontent.co <br> m/lerkermer/lua-projec <br> ts/master/SwagModeV002"))()
 </p>
 <br>
 <p class="end">-----</p>
 <br>
-<p>loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()</p>
+<p>loadstring(game:Ge <br> tObjects("rbxassetid://58 <br> 12737894")[1].Source)()</p>
 <br> 
 <p class="end">-----</p>
 <br>
-<p>loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()</p>
+<p>loadstring(game:HttpGe <br> t('https://raw.githubusercont <br> ent.com/SpaceYes/Lua/Ma <br> in/DaHood.Lua'))()</p>
 <br> <br>
 <p id="arsenal"> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
 <br><br>
-<p>loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()</p>
+<p>loadstring(game:HttpGe <br> t("https://raw.githubuserconten <br> t.com/HonestlyDex/DexHu <br> b/main/V3.lua"))()</p>
 <br> 
 <p class="end">-----</p>
 <br>
@@ -390,16 +383,16 @@ background-color: black;
 <br> 
 <p class="end">-----</p>
 <br>
-<p>loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()</p>
+<p>loadstring(game:HttpGet( <br> "https://bruh.keshsenp <br> ai.com/.lua"))()</p>
 <br> <br>
 <p id="disaster"> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
 <br> <br>
-<p>loadstring(game:HttpGet("https://raw.githubusercontent.com/2d<br>
-generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()</p>
+<p>loadstring(game:HttpGe <br> t("https://raw.githubuser <br> content.com/2d<br>
+generalspam1/s <br> cripts-and-stuff/master <br> /scripts/LoadstringUj <br> HI6RQpz2o8", true))()</p>
 <br> 
 <p class="end">-----</p> 
 <br>
-<p>loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()</p>
+<p>loadstring(game:HttpG <br> et('https://raw.githubuserconte <br> nt.com/9NLK7/93qjoadnlakn <br> wldk/main/main'))()</p>
 <br>
 <p class="end">-----</p>
 <br>
@@ -410,23 +403,79 @@ generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()<
 
 </body>
 <script>
+          document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
     document.getElementById("links").style.visibility="hidden";
     document.getElementById("btncat1").onclick = function(){
         document.getElementById("btncat1").style.visibility="hidden"
         document.getElementById("scripts").style.visibility="hidden"
         document.getElementById("links").style.visibility="visible"
-        document.getElementById("links").style.width="599.9999999999999px"
+        document.getElementById("links").style.width="300"
         document.getElementById("links").style.height="350px"
          document.getElementById("scripts").style.height="0px"
     }
-    document.getElementById("close").onclick = function(){
+    document.getElementById("btncat").onclick = function(){
         document.getElementById("btncat1").style.visibility="visible"
         document.getElementById("scripts").style.visibility="visible"
         document.getElementById("links").style.visibility="hidden"
         document.getElementById("links").style.width="0px"
         document.getElementById("links").style.height="0px"
-        document.getElementById("scripts").style.width="132.4200913242009vh"
-        document.getElementById("scripts").style.height="27.81844802342606vw"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncats").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat3").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat4").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat5").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat6").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat7").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
     }
 </script>
 </html>
