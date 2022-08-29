@@ -195,7 +195,7 @@ height: 19.7869101978691vh;
     color: white;
     font-family: sans-serif;
     text-align: center;
-height: 27.81844802342606vw;
+height: 33.81844802342606vw;
 width: 132.4200913242009vh;
 border-radius: 5px;
 padding-left: 10px;
@@ -239,7 +239,7 @@ border-radius: none;
     user-select: none;
     margin-bottom: 0.625em;
 }
-#btncat, #btncat1, #close, #btncats, #btncat3, #btncat4, #btncat5, #btncat6, #btncat7{
+#btncat, #close, #btncats, #btncat3, #btncat4, #btncat5, #btncat6, #btncat7, #btncat8, #btncat9{
     background-color: transparent;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
@@ -250,6 +250,19 @@ width:  fit-content;
     display: inline-block;
     margin-left: 10px;
     margin-top: 10px;
+    font-size: 0.938em;
+}
+#btncat1{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+color: white;
+height: 0px;
+width:  0px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -30px;
     font-size: 0.938em;
 }
 #btncats:hover{
@@ -270,7 +283,12 @@ width:  fit-content;
 #btncat7:hover{
     background-color: black;
 }
-
+#btncat8:hover{
+    background-color: black;
+}
+#btncat9:hover{
+    background-color: black;
+}
 #btncat1{
     width: fit-content;
     height: 30px;
@@ -301,6 +319,27 @@ background-color: black;
 }
 #linkss{
     color: transparent;
+}
+
+#divblack{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+height: 15.220700152207002vh;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+#copy, #copy2, #copy3 ,#copy4, #copy5 ,#copy6, #copy7, #copy8, #copy9, #copy10{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+color: white;
+height: 4.566210045662101vh;
+width:7.320644216691069vw;
+font-size: 1.063em;
 }
     </style>
 <div class="Topbarrr">
@@ -334,7 +373,7 @@ background-color: black;
     <button class="Btn1">SharkCore</button>
 </a>
 
-<a class="link3" href="https://sharkcores.github.io/Settings">
+<a class="link3" href="https://sharkcores.github.io/SettingsMobile">
     <button class="Btn2">Settings</button>
 </a>
 
@@ -363,68 +402,124 @@ background-color: black;
     <a href="#disaster" id="linkss">
         <button id="btncat7">NeutralDisaster Survival</button>
     </a>
+    <a href="#bloodi" id="linkss">
+        <button id="btncat8">Blood & Iron</button>
+    </a>
+    <a href="#streets" id="linkss">
+        <button id="btncat9">The Streets</button>
+    </a>
 </div>
 
-<button id="btncat1">Games</button>
+<button id="btncat1">Click to show games</button>
 
 <div id="scripts">
 
-<p id="brookhaven"> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/60832e7d04766a6381194d7502fbb1e8/raw/fb<br>ecd900a62e1fa054998f02084475b6c4ed8f18/woah", true))()</p>
+<p id="brookhaven"> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br>
+        <div id="divblack"> 
+            <p id="txt1">
+            loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/60832e7d04766a6381194d7502fbb1<br>e8/raw/fbecd900a62e1fa054998f02084475b6c4ed8f18/woah", true))()</p>
+            <button id="copy">Copy Text</button>
+        </div>
 <br> <br>
 <p id="prison"> <span class="TosTitle">Prison Life Scripts (3) </span>  <br> <br>
-<a href="https://pastebin.com/FqdAbZYS" target="_blank">Prison Life Script</a><br> <br>
-<a href="https://pastebin.com/FAXBKd93" target="_blank">Prison Life Script 2</a> <br> <br>
-<a href="https://pastebin.com/VHnxgyBQ" target="_blank"> Prison Life Script 3</a> </p>
-<br> <br>
-<p id="lifein"> <span class="ToSTitle">Life in Paradise Scripts (1) </span></p>
-<br> <br>
+    <a href="https://pastebin.com/FqdAbZYS" target="_blank">Prison Life Script</a><br> <br>
+    <a href="https://pastebin.com/FAXBKd93" target="_blank">Prison Life Script 2</a> <br> <br>
+    <a href="https://pastebin.com/VHnxgyBQ" target="_blank"> Prison Life Script 3</a> </p>
+    <br> <br>
+    <p id="lifein"> <span class="ToSTitle">Life in Paradise Scripts (1) </span></p>
+    <br> <br>
+    
+    <p> <a href="https://pastebin.com/sRpRiUyM" target="_blank"  >Life In Paradise Script</a></p>
+     <br> <br>
+     <p id="combat"> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
+    <br> <br>
+    <div id="divblack">
+      <p id="txt2"> loadstring(game:HttpGet("https://raw.githubusercontent.com/crosszay1/dogeware/main/combat%20warriars.lua"))() </p>
+      <button id="copy2">Copy Text</button>
+    </div>
+    <br> <br>
+    
+    <p id="dahood"> <span class="ToSTitle">Da hood Scripts (3) </span></p>
+    <br> <br>
+    <div id="divblack">
+    <p id="txt3">loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+        <button id="copy3">Copy Text</button>
+    </div>
+    </p>
+    <br>
+    <p class="end">-----</p>
+    <br>
+    <div id="divblack">
+    <p id="txt4">loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()</p>
+    <button id="copy4">Copy Text</button>
+</div>
+ <br>
+    <br> 
+    <p class="end">-----</p>
+    <br>
+    <div id="divblack">
+    <p id="txt5">loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()</p>
+    <button id="copy5">Copy Text</button>
+</div>
+    <br> <br>
+    <p id="arsenal"> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
+    <br><br>
+    <div id="divblack">
+    <p id="txt6">loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()</p>
+    <button id="copy6">Copy Text</button>
+</div>
+    <br> 
+    <p class="end">-----</p>
+    <br>
+    <p><a href="https://pastebin.com/fWpMduT9" target="_blank">Arsenal Script</a></p>
+    <br> 
+    <p class="end">-----</p>
+    <br>
+    <div id="divblack">
+    <p id="txt7">loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()</p>
+    <button id="copy7">Copy Text</button>
+</div>
+    <br> <br>
+    <p id="disaster"> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
+    <br> <br>
+    <div id="divblack">
+    <p id="txt8">loadstring(game:HttpGet("https://raw.githubusercontent.com/2d<br>
+    generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()</p>
+    <button id="copy8">Copy Text</button>
+</div>
+    <br> 
+    <p class="end">-----</p> 
+    <br>
+    <div id="divblack">
+    <p id="txt9">loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()</p>
+    <button id="copy9">Copy Text</button>
+</div>
+    <br>
+    <p class="end">-----</p>
+    <br>
+    <p><a href="https://pastebin.com/1gbYJhgD" target="_blank">Neutral Disaster Survival Script</a></p>
+    <br>
+    <br>
+    <p id="bloodi"> <span class="ToSTitle">Blood & Iron Scripts (1)</span> </p>
+    <br> <br>
+    <div id="divblack">
+    <p id="txt10">loadstring(game:HttpGet("https://pastebin.com/raw/Fk7xMTNX", true))()</p>
+    <button id="copy10">Copy Text</button>
+</div>
+    <br>
 
-<p> <a href="https://pastebin.com/sRpRiUyM" target="_blank"  >Life In Paradise Script</a></p>
- <br> <br>
- <p id="combat"> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
-<br> <br>
-  <p> loadstring(game:HttpGet("https://raw.githubusercontent.com/crosszay1/dogeware/main/combat%20warriars.lua"))() </p>
-<br> <br>
 
-<p id="dahood"> <span class="ToSTitle">Da hood Scripts (3) </span></p>
-<br> <br>
-<p>loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
-</p>
-<br>
-<p class="end">-----</p>
-<br>
-<p>loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()</p>
-<br> 
-<p class="end">-----</p>
-<br>
-<p>loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()</p>
-<br> <br>
-<p id="arsenal"> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
-<br><br>
-<p>loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()</p>
-<br> 
-<p class="end">-----</p>
-<br>
-<p><a href="https://pastebin.com/fWpMduT9" target="_blank">Arsenal Script</a></p>
-<br> 
-<p class="end">-----</p>
-<br>
-<p>loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()</p>
-<br> <br>
-<p id="disaster"> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
-<br> <br>
-<p>loadstring(game:HttpGet("https://raw.githubusercontent.com/2d<br>
-generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()</p>
-<br> 
-<p class="end">-----</p> 
-<br>
-<p>loadstring(game:HttpGet('https://raw.githubusercontent.com/9NLK7/93qjoadnlaknwldk/main/main'))()</p>
-<br>
-<p class="end">-----</p>
-<br>
-<p><a href="https://pastebin.com/1gbYJhgD" target="_blank">Neutral Disaster Survival Script</a></p>
-<br>
-<br>
+    <p id="streets"> <span class="ToSTitle">The Streets Scripts (4)</span> </p>
+    <br>
+    <p><a href="https://pastebin.com/d7fCvH45">The Streets Script</a></p>
+    <p><a href="https://pastebin.com/hLNRwJsg">The Streets Script</a></p> 
+    <p><a href="https://pastebin.com/YBH5rs7d">The Streets Script</a></p>
+    <p><a href="https://pastebin.com/teXc05pN">The Streets Script</a></p>
+    <p class="end">-----</p>
+    
+     <br> <br>
+    
+    
 </div>
 
 </body>
@@ -501,5 +596,115 @@ generalspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()<
         document.getElementById("scripts").style.width="132.4200913242009vh"
         document.getElementById("scripts").style.height="27.81844802342606vw"
     }
+    document.getElementById("btncat8").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="132.4200913242009vh"
+        document.getElementById("scripts").style.height="27.81844802342606vw"
+    }
+    document.getElementById("btncat9").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="132.4200913242009vh"
+        document.getElementById("scripts").style.height="27.81844802342606vw"
+    }
+    let Text1 = document.getElementById("txt1")
+      
+  document.getElementById("copy").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt1").innerHTML);
+    document.getElementById("copy").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy2").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt2").innerHTML);
+    document.getElementById("copy2").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy2").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy3").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt3").innerHTML);
+    document.getElementById("copy3").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy3").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy4").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt4").innerHTML);
+    document.getElementById("copy4").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy4").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy5").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt5").innerHTML);
+    document.getElementById("copy5").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy5").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy6").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt6").innerHTML);
+    document.getElementById("copy6").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy6").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy7").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt7").innerHTML);
+    document.getElementById("copy7").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy7").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy8").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt8").innerHTML);
+    document.getElementById("copy8").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy8").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy9").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt9").innerHTML);
+    document.getElementById("copy9").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy9").innerHTML="Copy Text";
+}, 1000);
+
+  }
+  document.getElementById("copy10").onclick = function(){
+    navigator.clipboard.writeText
+          (document.getElementById("txt10").innerHTML);
+    document.getElementById("copy10").innerHTML="Copied!"
+    setTimeout(function() {
+  document.getElementById("copy10").innerHTML="Copy Text";
+}, 1000);
+
+  }
 </script>
 </html>
